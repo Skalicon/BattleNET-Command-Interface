@@ -34,27 +34,27 @@ INSERT INTO battleyecommandqueue (cid, command, server) VALUES (20, "", 1);
 
 -- Command List Reference --
 
-0 - Init
-1 - Shutdown
-2 - Reassign
-3 - Restart
-4 - Lock
-5 - Unlock
-6 - Mission
-7 - Missions
-8 - RConPassword
-9 - MaxPing
-10 - Kick
-11 - Players
-12 - Say
-13 - LoadBans
-14 - LoadScripts
-15 - LoadEvents
-16 - Bans
-17 - Ban
-18 - AddBan
-19 - RemoveBan
-20 - WriteBans
+0 Init,
+1 Shutdown,
+2 Reassign,
+3 Restart,
+4 Lock,
+5 Unlock,
+6 Mission,
+7 Missions,
+8 RConPassword,
+9 MaxPing,
+10 Kick,
+11 Players,
+12 Say,
+13 LoadBans,
+14 LoadScripts,
+15 LoadEvents,
+16 Bans,
+17 Ban,
+18 AddBan,
+19 RemoveBan,
+20 WriteBans
 
 -- SERVERS.TXT EXPLAINED --
 
@@ -62,13 +62,16 @@ This is the connection information for your arma 3 server BattleEye
 If you have multiple servers just add the connection to a new line
 
 The format for the connection is
+
 ID,HOST,PORT,PASSWORD
 
 ID - This is what identifies your server in the command that you insert into the database in the server field.
 
 Example:
 1, 127.0.0.1, 2302, toast
+
 2, www.example.com, 2200, shoopdeloop
+
 7, localhost, 2200, mypass
 
 -- NOTES --
