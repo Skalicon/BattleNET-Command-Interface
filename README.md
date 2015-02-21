@@ -20,10 +20,10 @@ SETUP
 
 Command Structure
 --
--id: Should be set by the database, leave as null
--cid: The number for the battleEye command you want to execute from the Command List Reference below
--command: (Optional) Additional paramiters of the command, see http://www.battleye.com/doc.html for documentation on each -time: Should be set by the database as current timestamp
--server: The number for which server you want to send the command to, this is the 1st paramiter of the server connection string in servers.txt
+- id: Should be set by the database, leave as null
+- cid: The number for the battleEye command you want to execute from the Command List Reference below
+- command: (Optional) Additional paramiters of the command, see http://www.battleye.com/doc.html for documentation on each - - time: Should be set by the database as current timestamp
+- server: The number for which server you want to send the command to, this is the 1st paramiter of the server connection string in servers.txt
 
 Example:
 Bans a user with IP address 192.168.0.1 perminantly for reason "writing bad code" on server 1
@@ -67,9 +67,9 @@ ID,HOST,PORT,PASSWORD
 ID - This is what identifies your server in the command that you insert into the database in the server field.
 
 Example:
-*1, 127.0.0.1, 2302, toast
-*2, www.example.com, 2200, shoopdeloop
-*7, localhost, 2200, mypass
+- 1, 127.0.0.1, 2302, toast
+- 2, www.example.com, 2200, shoopdeloop
+- 7, localhost, 2200, mypass
 
 NOTES
 --
