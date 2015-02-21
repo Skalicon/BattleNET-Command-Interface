@@ -20,41 +20,41 @@ SETUP
 
 Command Structure
 --
-*id - Should be set by the database, leave as null
-*cid - The number for the battleEye command you want to execute from the Command List Reference below
-*command - (Optional) Additional paramiters of the command, see http://www.battleye.com/doc.html for documentation on each *time - Should be set by the database as current timestamp
-*server - The number for which server you want to send the command to, this is the 1st paramiter of the server connection string in servers.txt
+-id: Should be set by the database, leave as null
+-cid: The number for the battleEye command you want to execute from the Command List Reference below
+-command: (Optional) Additional paramiters of the command, see http://www.battleye.com/doc.html for documentation on each -time: Should be set by the database as current timestamp
+-server: The number for which server you want to send the command to, this is the 1st paramiter of the server connection string in servers.txt
 
 Example:
 Bans a user with IP address 192.168.0.1 perminantly for reason "writing bad code" on server 1
 And then does a write bans command to make it stick. Not sure why you have to do this -.-
 
-*INSERT INTO battleyecommandqueue (cid, command, server) VALUES (18, "192.168.0.1 0 writing bad code", 1);
-*INSERT INTO battleyecommandqueue (cid, command, server) VALUES (20, "", 1);
+INSERT INTO battleyecommandqueue (cid, command, server) VALUES (18, "192.168.0.1 0 writing bad code", 1);
+INSERT INTO battleyecommandqueue (cid, command, server) VALUES (20, "", 1);
 
 Command List Reference
 --
-*0 Init
-*1 Shutdown
-*2 Reassign
-*3 Restart
-*4 Lock
-*5 Unlock
-*6 Mission
-*7 Missions
-*8 RConPassword
-*9 MaxPing
-*10 Kick
-*11 Players
-*12 Say
-*13 LoadBans
-*14 LoadScripts
-*15 LoadEvents
-*16 Bans
-*17 Ban
-*18 AddBan
-*19 RemoveBan
-*20 WriteBans
+- 0 Init
+- 1 Shutdown
+- 2 Reassign
+- 3 Restart
+- 4 Lock
+- 5 Unlock
+- 6 Mission
+- 7 Missions
+- 8 RConPassword
+- 9 MaxPing
+- 10 Kick
+- 11 Players
+- 12 Say
+- 13 LoadBans
+- 14 LoadScripts
+- 15 LoadEvents
+- 16 Bans
+- 17 Ban
+- 18 AddBan
+- 19 RemoveBan
+- 20 WriteBans
 
 SERVERS.TXT EXPLAINED
 --
